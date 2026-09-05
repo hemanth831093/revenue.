@@ -1,0 +1,17 @@
+INSERT INTO audit_logs (id,transaction_id,decision,reason,action_taken,execution_result,stopping_rules_applied,created_at) VALUES
+(16,71,'RECOVERED_AUTOMATICALLY','Baseline recovery executed for insufficient_funds payment error.','PAYMENT_LINK','SUCCESS','{"max_retries_checked": true, "threshold_checked": true}','2026-09-02 04:19:07.127255'),
+(17,79,'RECOVERED_AUTOMATICALLY','Baseline recovery executed for insufficient_funds payment error.','PAYMENT_LINK','SUCCESS','{"max_retries_checked": true, "threshold_checked": true}','2026-09-04 10:19:07.129255'),
+(18,81,'RECOVERED_AUTOMATICALLY','Baseline recovery executed for card_expired payment error.','RETRY','SUCCESS','{"max_retries_checked": true, "threshold_checked": true}','2026-09-04 06:19:07.129901'),
+(19,84,'RECOVERED_AUTOMATICALLY','Baseline recovery executed for insufficient_funds payment error.','RETRY','SUCCESS','{"max_retries_checked": true, "threshold_checked": true}','2026-09-03 09:19:07.130887'),
+(20,87,'RECOVERED_AUTOMATICALLY','Baseline recovery executed for card_expired payment error.','PAYMENT_LINK','SUCCESS','{"max_retries_checked": true, "threshold_checked": true}','2026-09-02 07:19:07.131728'),
+(21,95,'RECOVERED_AUTOMATICALLY','Baseline recovery executed for card_expired payment error.','PAYMENT_LINK','SUCCESS','{"max_retries_checked": true, "threshold_checked": true}','2026-08-31 04:19:07.133325'),
+(22,112,'RECOVERED_AUTOMATICALLY','Baseline recovery executed for insufficient_funds payment error.','PAYMENT_LINK','SUCCESS','{"max_retries_checked": true, "threshold_checked": true}','2026-08-31 11:19:07.137570'),
+(23,128,'RECOVERED_AUTOMATICALLY','Baseline recovery executed for network_error payment error.','PAYMENT_LINK','SUCCESS','{"max_retries_checked": true, "threshold_checked": true}','2026-08-30 20:19:07.140830'),
+(24,132,'RECOVERED_AUTOMATICALLY','Baseline recovery executed for network_error payment error.','PAYMENT_LINK','SUCCESS','{"max_retries_checked": true, "threshold_checked": true}','2026-09-04 03:19:07.141835'),
+(25,134,'RECOVERED_AUTOMATICALLY','Baseline recovery executed for fraud_flag payment error.','RETRY','SUCCESS','{"max_retries_checked": true, "threshold_checked": true}','2026-08-31 03:19:07.142486'),
+(26,136,'RECOVERED_AUTOMATICALLY','Baseline recovery executed for card_expired payment error.','PAYMENT_LINK','SUCCESS','{"max_retries_checked": true, "threshold_checked": true}','2026-09-04 07:19:07.143152'),
+(27,138,'RECOVERED_AUTOMATICALLY','Baseline recovery executed for fraud_flag payment error.','PAYMENT_LINK','SUCCESS','{"max_retries_checked": true, "threshold_checked": true}','2026-08-31 15:19:07.143792'),
+(28,142,'RECOVERED_AUTOMATICALLY','Baseline recovery executed for network_error payment error.','PAYMENT_LINK','SUCCESS','{"max_retries_checked": true, "threshold_checked": true}','2026-09-04 06:19:07.144845'),
+(29,146,'RECOVERED_AUTOMATICALLY','Baseline recovery executed for fraud_flag payment error.','RETRY','SUCCESS','{"max_retries_checked": true, "threshold_checked": true}','2026-08-31 18:19:07.145863'),
+(30,147,'RECOVERED_AUTOMATICALLY','Baseline recovery executed for card_expired payment error.','PAYMENT_LINK','SUCCESS','{"max_retries_checked": true, "threshold_checked": true}','2026-08-31 13:19:07.146208')
+ON CONFLICT DO NOTHING;

@@ -1,0 +1,5 @@
+INSERT INTO recovery_actions (id,transaction_id,action_type,status,amount_recovered,razorpay_sim_id,executed_at,response_metadata) VALUES
+(46,1,'RETRY','SUCCESS',5000.0,'retry_sim_c8990cc1','2026-09-04 17:05:56.042483','{"success": true, "sim_id": "retry_sim_c8990cc1", "action_type": "RETRY", "gateway": "Razorpay_Test_Gateway", "message": "Payment retry successful via Razorpay Test Gateway. Amount Rs.5,000.00 captured for Aarav Sharma.", "amount_recovered": 5000.0}'),
+(47,1,'RETRY','SUCCESS',5000.0,'retry_sim_daa6b78e','2026-09-05 13:35:32.507449','{"success": true, "sim_id": "retry_sim_daa6b78e", "action_type": "RETRY", "gateway": "Razorpay_Test_Gateway", "message": "Payment retry successful via Razorpay Test Gateway. Amount Rs.5,000.00 captured for Aarav Sharma.", "amount_recovered": 5000.0}'),
+(48,1,'RETRY','SUCCESS',5000.0,'retry_sim_ada30e67','2026-09-05 13:43:01.466505','{"success": true, "sim_id": "retry_sim_ada30e67", "action_type": "RETRY", "gateway": "Razorpay_Test_Gateway", "message": "Payment retry successful via Razorpay Test Gateway. Amount Rs.5,000.00 captured for Aarav Sharma.", "amount_recovered": 5000.0}')
+ON CONFLICT DO NOTHING;
